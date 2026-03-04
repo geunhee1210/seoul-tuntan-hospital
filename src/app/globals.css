@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F8F9FA;
+  --foreground: #171717;
+  --primary: #1A2B4C;
+  --primary-light: #0C2E86;
+  --primary-bg: #F0F4F8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-bg: var(--primary-bg);
+  --font-sans: var(--font-noto-sans-kr);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
