@@ -3,7 +3,7 @@ import { Noto_Sans_KR, Gowun_Batang } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import PopupManager from "@/components/popup/PopupManager";
+
 
 const notoSansKr = Noto_Sans_KR({
   subsets: ["latin"],
@@ -33,7 +33,6 @@ export default function RootLayout({
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <PopupManager />
       </body>
     </html>
   );
